@@ -33,25 +33,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-/*
-address {
-  font-style: normal;
-}
-button {
-  display: block;
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
-}
 
-.section {
-  @media screen and (max-width: 1199px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .list {
   list-style: none;
   padding-left: 0;
@@ -59,43 +41,17 @@ button {
 }
 .link {
   text-decoration: none;
-  // color: inherit;
 }
-*/
+
 .section {
-  /* @media screen and (max-width: 1199px) {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  } */
   padding-top: 120px;
   padding-bottom: 120px;
 }
-
-/* .container {
-  min-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-} */
 
 .container {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-}
-@media screen and (min-width: 320px) {
-  .container {
-    width: 320px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
 }
 
 header {
@@ -323,6 +279,16 @@ ol {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+  .order h1 {
+    font-size: 36px;
+    width: 319px;
+    min-width: 150px;
+    height: 80px;
+    line-height: 1.11;
+  }
+}
+
 .order-button {
   cursor: pointer;
   color: var(--pure-white);
@@ -372,13 +338,34 @@ ol {
   width: 408px;
   height: 576px;
 
-  background: #fcfcfc;
+  background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 0 24px;
   padding-top: 72px;
   padding-bottom: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .modal {
+    position: absolute;
+    min-width: 392px;
+    height: 586px;
+    /* margin: 0 auto; */
+    top: 96px;
+    left: 18px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1155px) {
+  .modal {
+    position: absolute;
+    width: 408px;
+    height: 586px;
+    left: 180px;
+    top: 96px;
+  }
 }
 
 .modal-close {
@@ -576,24 +563,13 @@ input[type='checkbox'] {
   overflow: hidden;
 }
 
-@media screen and (min-width: 1156px) {
-  .benefit-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    width: 264px;
-    background-color: var(--light-color);
-  }
-}
-
-@media screen and (max-width: 1155px) {
-  .benefit-icon {
+@media screen and (max-width: 1200px) {
+  .benefit-icon svg,
+  .presentation {
     display: none;
   }
 }
 
-.our-work,
 .team-cards {
   display: flex;
   flex-wrap: wrap;
@@ -605,61 +581,17 @@ input[type='checkbox'] {
   width: 264px;
 }
 
-@media screen and (max-width: 759px) {
-  .benefits {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .benefits li {
-    padding: 0px;
-    gap: 8px;
-    max-width: 396px;
-    /* width: 80%; */
-    /* height: 96px; */
-  }
-  .benefit-name {
-    text-align: center;
-  }
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 0px;
 }
-
-@media screen and (min-width: 760px) and (max-width: 1155px) {
-  .benefits {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-bottom: 0px;
-    max-width: 759px;
-  }
-  .benefits li {
-    margin-bottom: 72px;
-    gap: 8px;
-    width: 50%;
-    height: 72px;
-  }
-  .benefit-name {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1156px) {
-  .benefits {
-    display: flex;
-    /* flex-direction: row; */
-    flex-wrap: wrap;
-    gap: 24px;
-    justify-content: space-around;
-  }
-  .benefits li {
-    padding: 0px;
-    gap: 8px;
-    max-width: 264px;
-    /* height: 72px; */
-  }
-  .benefit-name {
-    text-align: center;
-  }
+.benefits li {
+  margin-bottom: 72px;
+  gap: 16px;
+  width: 47%;
+  height: 72px;
 }
 
 .benefit-name {
@@ -675,15 +607,6 @@ input[type='checkbox'] {
   line-height: 1.5;
 }
 
-.our-work li {
-  width: 360px;
-}
-
-.presentation {
-  padding-top: 0;
-}
-
-.presentation h2,
 .our-team h2 {
   text-transform: capitalize;
   font-weight: 700;
@@ -697,6 +620,13 @@ input[type='checkbox'] {
 .our-team {
   background-color: var(--light-color);
   text-align: center;
+  width: 480px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .our-team {
+    width: 100%;
+  }
 }
 
 .our-team h3 {

@@ -1,0 +1,31 @@
+.container {
+  width: 768px;
+}
+
+.benefits {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 0px;
+  /* max-width: 759px; */
+}
+.benefits li {
+  margin-bottom: 72px;
+  gap: 8px;
+  width: 47%;
+  height: 72px;
+}
+
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.our-team {
+  background-color: var(--light-color);
+  text-align: center;
+  width: 100%;
+}

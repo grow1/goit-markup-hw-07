@@ -1,0 +1,30 @@
+.container {
+  width: 480px;
+}
+
+.benefits {
+  display: block;
+  margin: 0 auto;
+}
+
+.benefits li {
+  display: block;
+  padding: 0;
+  gap: 8px;
+  min-width: 320px;
+  margin: 0 auto 30px;
+}
+
+.benefit-name {
+  text-align: center;
+}
+
+.team-cards {
+  display: block;
+  max-width: 479px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.our-team h2 {
+}

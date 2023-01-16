@@ -1,0 +1,67 @@
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.benefits {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-around;
+}
+.benefits li {
+  padding: 0px;
+  gap: 8px;
+  width: 264px;
+  /* height: 72px; */
+}
+.benefit-name {
+  text-align: center;
+}
+
+.benefit-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  width: 264px;
+  background-color: var(--light-color);
+}
+
+.our-work {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.our-work li {
+  width: 360px;
+}
+
+.presentation {
+  padding-top: 0;
+}
+
+.presentation h2 {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  color: var(--dark-color);
+  margin-bottom: 72px;
+}
+
+.our-team {
+  background-color: var(--light-color);
+  text-align: center;
+  width: 100%;
+}
