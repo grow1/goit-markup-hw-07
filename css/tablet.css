@@ -20,7 +20,8 @@
 .team-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  row-gap: 56px;
+  column-gap: 24px;
   justify-content: center;
 }
 
@@ -28,4 +29,31 @@
   background-color: var(--light-color);
   text-align: center;
   width: 100%;
+}
+
+.customers-icons {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  max-width: 740px;
+}
+
+.customers-icons > li {
+  width: 168px;
+}
+
+.footer-socials {
+  margin-left: 24px;
+}
+
+.footer > .mobile-footer {
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-left: 108px;
+  max-width: 978px;
+}
+
+.subscription {
+  margin-top: 72px;
+  margin-left: 0;
 }

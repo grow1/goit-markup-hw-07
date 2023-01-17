@@ -65,3 +65,30 @@
   text-align: center;
   width: 100%;
 }
+
+.customers-icons {
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1156px;
+}
+
+.footer-socials {
+  margin-left: 120px;
+}
+
+.subscription {
+  margin-left: 80px;
+  margin-top: 0;
+}
+
+.footer > .mobile-footer {
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 108px;
+  min-width: 1024px;
+}
+.subscribe {
+  display: flex;
+  gap: 24px;
+  margin-top: 16px;
+}

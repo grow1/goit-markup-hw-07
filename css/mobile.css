@@ -28,3 +28,66 @@
 
 .our-team h2 {
 }
+
+.team-cards > li {
+  margin: 0 auto;
+  margin-top: 72px;
+}
+
+.customers-icons {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.customers-icons a {
+  width: 168px;
+}
+
+.footer-socials {
+  margin: 72px 0 16px;
+}
+
+.subscribe input {
+  padding: 0;
+}
+
+.footer > .mobile-footer {
+  display: block;
+  text-align: center;
+  min-width: 320px;
+  width: 100%;
+}
+
+.subscribe {
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe input {
+  padding-left: 16px;
+}
+
+.subscription {
+  margin: 0;
+}
+
+.subscription p {
+  margin: 72px 0 16px;
+}
+
+.social-links {
+  justify-content: center;
+}
+
+.footer-text {
+  text-align: left;
+}
+
+.logos p {
+  margin: 0 auto;
+  margin-top: 16px;
+}
+
+.subscribe input {
+  width: 100%;
+}

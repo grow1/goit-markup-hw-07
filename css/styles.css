@@ -786,6 +786,10 @@ input[type='checkbox'] {
   line-height: 1.5;
 }
 
+.container.customers {
+  width: 100%;
+}
+
 .customers-header {
   text-transform: capitalize;
   font-weight: 700;
@@ -798,8 +802,9 @@ input[type='checkbox'] {
 
 .customers-icons {
   display: flex;
-  align-items: center;
+  justify-content: center;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .customers-icons a {
@@ -829,7 +834,7 @@ input[type='checkbox'] {
 }
 
 .footer-socials {
-  margin-left: 120px;
+  margin-left: 24px;
 }
 
 .sub-button {
@@ -855,7 +860,7 @@ input[type='checkbox'] {
 }
 
 .subscription {
-  margin-left: 80px;
+  margin-top: 70px;
 }
 
 .social-links {
@@ -866,6 +871,10 @@ input[type='checkbox'] {
 
 .footer > .container {
   display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  justify-content: center;
+  width: 100%;
 }
 
 .footer-socials a {
