@@ -184,7 +184,7 @@ ol {
   text-decoration: underline;
 }
 
-.menu-toggle {
+/* .menu-toggle {
   min-height: 40px;
   min-width: 40px;
   display: flex;
@@ -198,7 +198,7 @@ ol {
   border: none;
   border-radius: 50%;
   outline: none;
-}
+} */
 
 @media (min-width: 768px) {
   .menu-toggle {
@@ -279,16 +279,6 @@ ol {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
-  .order h1 {
-    font-size: 36px;
-    width: 319px;
-    min-width: 150px;
-    height: 80px;
-    line-height: 1.11;
-  }
-}
-
 .order-button {
   cursor: pointer;
   color: var(--pure-white);
@@ -333,7 +323,7 @@ ol {
   align-items: center;
 }
 
-.modal {
+/* .modal {
   position: absolute;
   width: 408px;
   height: 576px;
@@ -345,18 +335,7 @@ ol {
   padding: 0 24px;
   padding-top: 72px;
   padding-bottom: 24px;
-}
-
-@media screen and (max-width: 768px) {
-  .modal {
-    position: absolute;
-    min-width: 392px;
-    height: 586px;
-    /* margin: 0 auto; */
-    top: 96px;
-    left: 18px;
-  }
-}
+} */
 
 @media screen and (min-width: 769px) and (max-width: 1155px) {
   .modal {
@@ -578,7 +557,7 @@ input[type='checkbox'] {
 }
 
 .benefits li {
-  width: 264px;
+  /* width: 264px; */
 }
 
 .benefits {
@@ -588,10 +567,9 @@ input[type='checkbox'] {
   padding-bottom: 0px;
 }
 .benefits li {
-  margin-bottom: 72px;
-  gap: 16px;
+  /* gap: 16px;
   width: 47%;
-  height: 72px;
+  height: 72px; */
 }
 
 .benefit-name {
@@ -620,9 +598,10 @@ input[type='checkbox'] {
 .our-team {
   background-color: var(--light-color);
   text-align: center;
-  width: 480px;
+  /* width: 480px; */
 }
 
+/* for mobile */
 @media screen and (min-width: 481px) and (max-width: 767px) {
   .our-team {
     width: 100%;
@@ -786,9 +765,9 @@ input[type='checkbox'] {
   line-height: 1.5;
 }
 
-.container.customers {
+/* .container.customers {
   width: 100%;
-}
+} */
 
 .customers-header {
   text-transform: capitalize;
@@ -800,12 +779,12 @@ input[type='checkbox'] {
   margin-bottom: 72px;
 }
 
-.customers-icons {
+/* .customers-icons {
   display: flex;
   justify-content: center;
   gap: 24px;
   flex-wrap: wrap;
-}
+} */
 
 .customers-icons a {
   display: flex;

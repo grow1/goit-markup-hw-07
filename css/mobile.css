@@ -1,28 +1,117 @@
 .container {
-  width: 480px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+header {
+  height: 70px;
+}
+
+.contacts {
+  display: none;
+}
+
+.navigation {
+  margin-left: auto;
+}
+
+.header {
+  /* align-items: center; */
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.order {
+  padding: 112px 0;
+  text-align: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)),
+    url('../images/people-office.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 432px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.order-button {
+  cursor: pointer;
+  color: var(--pure-white);
+  background-color: var(--primary-brand-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+  padding: 16px 32px;
+  margin-top: 72px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order h1 {
+  font-size: 36px;
+  width: 319px;
+  min-width: 150px;
+  height: 80px;
+  line-height: 1.11;
+}
+
+.modal {
+  position: absolute;
+  min-width: 392px;
+  height: 586px;
+  background-color: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 0 24px;
+  padding-top: 72px;
+  padding-bottom: 24px;
 }
 
 .benefits {
-  display: block;
-  margin: 0 auto;
+  /* display: block;
+  margin: 0 auto; */
 }
 
 .benefits li {
   display: block;
   padding: 0;
-  gap: 8px;
-  min-width: 320px;
-  margin: 0 auto 30px;
+}
+
+.benefits li:not(:last-child) {
+  margin-bottom: 72px;
 }
 
 .benefit-name {
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
 }
 
 .team-cards {
   display: block;
-  max-width: 479px;
-  width: 80%;
   margin: 0 auto;
 }
 
@@ -34,9 +123,17 @@
   margin-top: 72px;
 }
 
+@media screen and (min-width: 560px) {
+  .container.customers {
+    width: 560px;
+  }
+}
+
 .customers-icons {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 72px 24px;
 }
 
 .customers-icons a {

@@ -1,5 +1,10 @@
 .container {
-  width: 768px;
+  /* width: 768px; */
+}
+
+.section {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .benefits {
@@ -31,11 +36,15 @@
   width: 100%;
 }
 
+.container.customers {
+  width: 585px;
+}
+
 .customers-icons {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
-  max-width: 740px;
+  gap: 72px 24px;
 }
 
 .customers-icons > li {
@@ -48,9 +57,8 @@
 
 .footer > .mobile-footer {
   flex-wrap: wrap;
-  justify-content: left;
-  margin-left: 108px;
-  max-width: 978px;
+  justify-content: flex-start;
+  width: 535px;
 }
 
 .subscription {

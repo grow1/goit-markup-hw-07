@@ -19,13 +19,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link href="./css/mobile.css" rel="stylesheet" media="screen and (max-width: 480px)" />
+    <link href="./css/mobile.css" rel="stylesheet" media="screen and (max-width: 767px)" />
     <link href="./css/tablet.css" rel="stylesheet" media="screen and (min-width: 768px)" />
-    <link href="./css/desktop.css" rel="stylesheet" media="screen and (min-width: 1200px)" />
+    <link href="./css/desktop.css" rel="stylesheet" media="screen and (min-width: 1158px)" />
   </head>
   <body>
     <!-- header -->
-    <!-- <header>
+    <header>
       <div class="container header">
         <a href="./index.html" class="logo">Web<span class="logo-header">Studio</span></a>
         <nav class="navigation">
@@ -40,41 +40,47 @@
               <a href="#" class="nav-global">Contacts</a>
             </li>
           </ul>
+          <div class="burger-menu">
+            <button
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                width="32"
+                height="22"
+                fill="currentColor"
+                viewBox="0 0 32 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861"
+                  stroke="#2E2F42"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+
+            <ul class="menu">
+              <li><a href="" class="link">About</a></li>
+              <li><a href="" class="link">Products</a></li>
+              <li><a href="" class="link">Contacts</a></li>
+              <li><a href="" class="link">Career</a></li>
+            </ul>
+          </div>
         </nav>
         <ul class="contacts">
           <li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
           <li><a href="tel:+110001111111" class="contact">+11 (000) 111-11-11</a></li>
         </ul>
       </div>
-      <div class="burger-menu">
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-
-        <ul class="menu">
-          <li><a href="" class="link">About</a></li>
-          <li><a href="" class="link">Products</a></li>
-          <li><a href="" class="link">Contacts</a></li>
-          <li><a href="" class="link">Career</a></li>
-        </ul>
-      </div>
-    </header> -->
+    </header>
     <!-- main content -->
     <main>
       <!-- section order -->
-      <!-- <section class="section order">
+      <section class="section order">
         <div class="container">
           <h1>Effective Solutions for Your Business</h1>
           <button data-modal-open class="order-button" type="button">Order Service</button>
@@ -134,7 +140,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- section soft skills -->
       <section class="section soft-skills">
         <div class="container">
