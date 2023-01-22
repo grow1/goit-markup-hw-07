@@ -7,6 +7,11 @@
   padding-bottom: 96px;
 }
 
+.menu,
+.burger-menu {
+  display: none;
+}
+
 .benefits {
   display: flex;
   /* flex-direction: row; */
