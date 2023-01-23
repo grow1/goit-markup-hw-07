@@ -1,5 +1,18 @@
+:root {
+  --primary-brand-color: #4d5ae5;
+  --dark-color: #2e2f42;
+  --success-color: #31d0aa;
+  --text-color: #434455;
+  --subtle-text-color: #8e8f99;
+  --accent-color: #e7e9fc;
+  --light-color: #f4f4fd;
+  --pure-white: white;
+  --order-active: #404bbf;
+  --basic-svg: #afb1b8;
+}
+
 .container {
-  /* width: 768px; */
+  width: 768px;
 }
 
 .section {
@@ -7,24 +20,60 @@
   padding-bottom: 96px;
 }
 
-.menu,
-.burger-menu {
+.menu-toggle,
+#mobile-menu {
   display: none;
+}
+
+.order {
+  padding: 112px 0;
+  text-align: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)),
+    url('../images/people-office.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  height: 436px;
+  margin: 0 auto;
+}
+
+.order-button {
+  cursor: pointer;
+  color: var(--pure-white);
+  background-color: var(--primary-brand-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+  padding: 16px 32px;
+  margin-top: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .benefits {
   display: flex;
-  /* flex-direction: row; */
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding-bottom: 0px;
-  /* max-width: 759px; */
+  gap: 72px 24px;
 }
 .benefits li {
   margin-bottom: 72px;
   gap: 8px;
   width: 47%;
   height: 72px;
+}
+
+.benefit-name {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark-color);
 }
 
 .team-cards {

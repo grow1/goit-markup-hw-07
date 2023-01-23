@@ -34,10 +34,6 @@ header {
   margin-left: auto;
 }
 
-.header {
-  /* align-items: center; */
-}
-
 /* burger-menu */
 
 .menu {
@@ -127,6 +123,12 @@ header {
   margin-top: 284px;
 }
 
+@media screen and (max-width: 410px) {
+  .phone {
+    font-size: 26px;
+  }
+}
+
 .email {
   font-weight: 500;
   font-size: 20px;
@@ -214,11 +216,6 @@ header {
   padding: 0 24px;
   padding-top: 72px;
   padding-bottom: 24px;
-}
-
-.benefits {
-  /* display: block;
-  margin: 0 auto; */
 }
 
 .benefits li {
