@@ -106,11 +106,8 @@
   flex-wrap: wrap;
   gap: 72px 24px;
 }
-.benefits li {
-  margin-bottom: 72px;
-  gap: 8px;
-  width: 47%;
-  height: 72px;
+.benefits-li-item {
+  width: calc((100% - 24px) / 2);
 }
 
 .benefit-name {

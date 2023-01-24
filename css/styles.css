@@ -289,7 +289,6 @@ ol {
 
 .labels textarea {
   resize: none;
-  width: 360px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -311,7 +310,6 @@ ol {
 
 .input-with-svg input {
   width: 100%;
-  width: 360px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -444,20 +442,11 @@ input[type='checkbox'] {
   justify-content: center;
 }
 
-.benefits li {
-  /* width: 264px; */
-}
-
 .benefits {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 0px;
-}
-.benefits li {
-  /* gap: 16px;
-  width: 47%;
-  height: 72px; */
 }
 
 .benefit-name {
@@ -781,7 +770,6 @@ input[type='checkbox'] {
 .footer-text {
   color: var(--accent-color);
   width: 264px;
-  height: 72px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-top: 16px;

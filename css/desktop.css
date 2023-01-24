@@ -370,7 +370,7 @@ ol {
 
 .check__input:checked + .check__box {
   background-color: #4a90e2;
-  background-image: url(./images/custom-check.svg);
+  background-image: url(../images/custom-check.svg);
 }
 
 .terms {
@@ -430,10 +430,6 @@ input[type='checkbox'] {
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
-}
-
-.benefits li {
-  width: 264px;
 }
 
 .benefit-name {
@@ -816,10 +812,8 @@ input[type='checkbox'] {
   gap: 24px;
   justify-content: space-around;
 }
-.benefits li {
-  padding: 0px;
-  gap: 8px;
-  width: 264px;
+.benefits-li-item {
+  width: calc((100% - 72px) / 4);
   /* height: 72px; */
 }
 .benefit-name {
