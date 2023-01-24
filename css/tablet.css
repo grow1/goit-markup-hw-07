@@ -20,21 +20,62 @@
   padding-bottom: 96px;
 }
 
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-left: auto;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #434455;
+}
+
+.navigation {
+  margin-left: 123px;
+}
+
 .menu-toggle,
 #mobile-menu {
   display: none;
+}
+
+.modal {
+  position: absolute;
+  width: 408px;
+  height: 586px;
+  left: 180px;
+  top: 96px;
+  background: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 0 24px;
+  padding-top: 72px;
+  padding-bottom: 24px;
 }
 
 .order {
   padding: 112px 0;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)),
-    url('../images/people-office.jpg');
+    url('../images/people-office-desk.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1440px;
+  max-width: 1157px;
   height: 436px;
   margin: 0 auto;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .order {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)),
+      url('../images/people-office-desk2x.jpg');
+  }
 }
 
 .order-button {
