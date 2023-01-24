@@ -24,6 +24,11 @@
   display: flex;
   gap: 40px;
 }
+
+.current::after {
+  top: 57px;
+}
+
 .contacts {
   display: flex;
   flex-direction: column;

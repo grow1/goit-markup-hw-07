@@ -152,6 +152,13 @@ ol {
   margin: 0 auto;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .order {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)),
+      url('../images/people-office-desk2x.jpg');
+  }
+}
+
 .order-button {
   cursor: pointer;
   color: var(--pure-white);
@@ -797,7 +804,8 @@ input[type='checkbox'] {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .order {
-    background-image: url('../images/people-office-desk2x.jpg');
+    background-image: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)),
+      url('../images/people-office-desk2x.jpg');
   }
 }
 
@@ -872,7 +880,7 @@ input[type='checkbox'] {
 .footer > .mobile-footer {
   flex-wrap: wrap;
   flex-direction: row;
-  margin-left: 108px;
+  justify-content: center;
   min-width: 1024px;
 }
 .subscribe {
