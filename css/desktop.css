@@ -112,10 +112,10 @@ ol {
   display: block;
   height: 4px;
   left: 0px;
-  top: 44px;
+  top: 45px;
   width: 100%;
   border-radius: 2px;
-  background-color: var(--order-active);
+  background-color: var(--primary-brand-color);
 }
 
 .contacts,
@@ -127,6 +127,7 @@ ol {
 .contact {
   color: var(--text-color);
   text-decoration: none;
+  font-size: 16px;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -362,7 +363,7 @@ ol {
 
 .check__input:checked + .check__box {
   background-color: #4a90e2;
-  background-image: url(/images/custom-check.svg);
+  background-image: url(./images/custom-check.svg);
 }
 
 .terms {

@@ -15,10 +15,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link href="./css/mobile.css" rel="stylesheet" media="screen and (max-width: 767px)" />
+    <link href="./css/tablet.css" rel="stylesheet" media="screen and (min-width: 768px)" />
+    <link href="./css/desktop.css" rel="stylesheet" media="screen and (min-width: 1158px)" />
   </head>
   <body>
     <!-- header -->
@@ -37,6 +40,84 @@
               <a href="#" class="nav-global">Contacts</a>
             </li>
           </ul>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="32"
+              height="22"
+              fill="currentColor"
+              viewBox="0 0 32 22"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861"
+                stroke="#2E2F42"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+
+            <ul class="mobile-menu">
+              <li><a href="" class="link">Studio</a></li>
+              <li><a href="" class="link">Portfolio</a></li>
+              <li><a href="" class="link">Contacts</a></li>
+            </ul>
+            <div class="phone-and-socials">
+              <div class="phone">+11 (000) 111-11-11</div>
+              <div class="email">info@devstudio.com</div>
+            <ul class="burger-socials">
+              <li>
+                <a href="#">
+                  <svg width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
         <ul class="contacts">
           <li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>

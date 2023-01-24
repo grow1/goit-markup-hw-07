@@ -68,6 +68,11 @@ header {
   margin-left: 77px;
 }
 
+.navlist {
+  display: flex;
+  gap: 40px;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -381,7 +386,7 @@ ol {
 
 .check__input:checked + .check__box {
   background-color: #4a90e2;
-  background-image: url(/images/custom-check.svg);
+  background-image: url(./images/custom-check.svg);
 }
 
 .terms {
