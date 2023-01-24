@@ -112,7 +112,7 @@ ol {
   display: block;
   height: 4px;
   left: 0px;
-  top: 45px;
+  top: 42px;
   width: 100%;
   border-radius: 2px;
   background-color: var(--primary-brand-color);
@@ -356,14 +356,15 @@ ol {
   position: absolute;
   margin-top: 0.2em;
   margin-left: -1em;
-  width: 0.6em;
-  height: 0.6em;
+  width: 16px;
+  height: 16px;
   overflow: hidden;
   border-radius: 0.05em;
   background-color: white;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  box-shadow: 0 0 0 0.1em #4a90e2;
+  border: 1.25px solid #2e2f42;
+  border-radius: 2px;
 }
 
 /* Checked */
